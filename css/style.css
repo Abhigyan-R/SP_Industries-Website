@@ -225,11 +225,12 @@ a.btn-send:hover {
 .navbar-default {
 	background:rgba(248, 248, 248, 0);
 	border:rgba(248, 248, 248, 0);
-	padding:50px;
+	padding:13px;
 }
 a.navbar-brand img {
 	position:relative;
 	top:9px;
+	transform: scale(1.9);
 }
 #menu {
 	position:absolute;
@@ -401,7 +402,7 @@ ul.nav li.active a:before {
 }
 .heading p {
 	padding:20px 0px;
-	font-size:13px;
+	font-size:17px;
 	font-weight:bolder;
 	color:#555;
 }
@@ -1559,7 +1560,8 @@ color:#fff;
 	position: relative;
   }
   .containerws img{
-	  width: 50%;
+	  width: 82%;
+	  padding-bottom: 20px;
   }
   .containerws img:hover{
 	  width: 100%;
