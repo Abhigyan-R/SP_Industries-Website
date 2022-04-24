@@ -228,6 +228,7 @@
         e.preventDefault();
         portfolioFilters.forEach(function(el) {
           el.classList.remove('filter-active');
+          AOS.refresh()
         });
         this.classList.add('filter-active');
 

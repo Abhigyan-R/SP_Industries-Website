@@ -697,13 +697,6 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-.clients .swiper-slide:hover img {
-  opacity: 1;
-}
 .clients .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -810,7 +803,7 @@ section {
   padding: 8px 18px 10px 18px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.1;
   color: #444444;
   margin: 0 3px 10px 3px;
   transition: all ease-in-out 0.3s;
