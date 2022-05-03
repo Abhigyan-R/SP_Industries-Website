@@ -222,19 +222,18 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter=".SMC">Sheet<br>Metal Components</li>
-              <li data-filter=".SPM">Special<br>Purpose Machine</li>
-              <li data-filter=".AL">Assembly <br>Lines</li>
-              <li data-filter=".PM">Precision<br>Machines</li>
-              <li data-filter=".JFT">Jig, Fixtures &<br>Testing Machines</li>
-              <li data-filter=".FHM">Fabrication &<br>Heavy Machineries</li>
-              <li data-filter=".DS">Designing<br>Services</li>
-            </ul>
+          <div id="portfolio-flters" class="col-lg-12 d-flex justify-content-center tab">
+              <button class="tablinks filter-active" onclick="openV(event, 'SMC')" id="defaultOpen">Sheet<br>Metal Components</button>
+              <button class="tablinks" onclick="openV(event, 'SPM')">Special<br>Purpose Machine</button>
+              <button class="tablinks" onclick="openV(event, 'AL')">Assembly <br>Lines</button>
+              <button class="tablinks" onclick="openV(event, 'PM')">Precision<br>Machines</button>
+              <button class="tablinks" onclick="openV(event, 'JFT')">Jig, Fixtures &<br>Testing Machines</button>
+              <button class="tablinks" onclick="openV(event, 'FHM')">Fabrication &<br>Heavy Machineries</button>
+              <button class="tablinks" onclick="openV(event, 'DS')">Designing<br>Services</button>
           </div>
         </div>
 
+        <div id="SMC" class="tabcontent">
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item SMC">
@@ -333,6 +332,12 @@
               
             </div>
           </div>
+
+        </div></div></div>
+
+        <div id="SPM" class="tabcontent">
+        <div class="row portfolio-container">
+         
           <div class="col-lg-4 col-md-6 portfolio-item SPM">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650195671/spm/0_ezdgvc.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -415,6 +420,11 @@
             </div>
           </div>
 
+        </div></div></div>
+
+        <div id="AL" class="tabcontent">
+        <div class="row portfolio-container">
+         
           <div class="col-lg-4 col-md-6 portfolio-item AL">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650195669/spm/14_hfeawx.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -469,6 +479,12 @@
               
             </div>
           </div>
+
+        </div></div></div>
+
+        <div id="JFT" class="tabcontent">
+        <div class="row portfolio-container">
+         
           <div class="col-lg-4 col-md-6 portfolio-item JFT">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650195917/jig%20fixure/00_tdu4el.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -523,6 +539,12 @@
               
             </div>
           </div>
+
+        </div></div></div>
+
+        <div id="PM" class="tabcontent">
+        <div class="row portfolio-container">
+         
           <div class="col-lg-4 col-md-6 portfolio-item PM">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650195824/precision%20machining/0_bgyihh.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -722,6 +744,12 @@
               
             </div>
           </div>
+
+        </div></div></div>
+
+        <div id="FHM" class="tabcontent">
+        <div class="row portfolio-container">
+         
           <div class="col-lg-4 col-md-6 portfolio-item FHM">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650195872/Mfg/1_siaqct.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -758,6 +786,12 @@
               
             </div>
           </div>
+
+        </div></div></div>
+
+        <div id="DS" class="tabcontent">
+        <div class="row portfolio-container">
+         
           <div class="col-lg-4 col-md-6 portfolio-item DS">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650196000/design/0_bs6abq.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -786,10 +820,12 @@
             </div>
           </div>
 
-        </div>
+        </div></div></div>
 
-      </div>
-    </section><!-- End Portfoio Section -->
+        </div>
+      </section>
+
+    <!-- End Portfoio Section -->
 
     <!-- ======= Infra Section ======= -->
     <section id="infra" class="portfoio">
@@ -875,11 +911,9 @@
 
           </div>
 
-
         </div>
-
-      </div>
-    </section><!-- End Portfoio Section -->
+      </section>
+<!-- End Portfoio Section -->
 
 <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
@@ -1180,7 +1214,64 @@ Unit-2: Plot No. 97, Sector No. 7, <br>PCNTDA, Bhosari, <br>Pune-411026<br>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    //js for tab change
 
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
+  function openV(evt, service) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(service).style.display = "block";
+  evt.currentTarget.className += " active";
+
+    window.addEventListener('load', () => {
+    let portfolioContainer = select(service);
+    if (portfolioContainer) {
+      let portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+      });
+
+      let portfolioFilters = select('#portfolio-flters button', true);
+
+      on('click', '#portfolio-flters button', function(e) {
+        e.preventDefault();
+        portfolioFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+          AOS.refresh()
+        });
+        this.classList.add('filter-active');
+
+        portfolioIsotope.arrange({
+          filter: this.getAttribute(service)
+        });
+        portfolioIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+      }, true);
+    }
+
+  });
+  
+}
+
+  </script>
 </body>
 
 </html>
