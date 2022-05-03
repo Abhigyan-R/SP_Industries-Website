@@ -1241,7 +1241,7 @@ Unit-2: Plot No. 97, Sector No. 7, <br>PCNTDA, Bhosari, <br>Pune-411026<br>
   evt.currentTarget.className += " active";
 
     window.addEventListener('load', () => {
-    let portfolioContainer = select(service);
+    let portfolioContainer = select("portfolio-container");
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item',
