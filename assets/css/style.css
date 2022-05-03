@@ -797,7 +797,7 @@ section {
   text-align: center;
   border-radius: 50px;
 }
-.portfoio #portfolio-flters li {
+.portfoio #portfolio-flters button {
   cursor: pointer;
   display: inline-block;
   padding: 8px 18px 10px 18px;
@@ -809,11 +809,11 @@ section {
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
 }
-.portfoio #portfolio-flters li:hover, .portfoio #portfolio-flters li.filter-active {
+.portfoio #portfolio-flters button:hover, .portfoio #portfolio-flters button.filter-active {
   color: #fff;
   background: #0880e8;
 }
-.portfoio #portfolio-flters li:last-child {
+.portfoio #portfolio-flters button:last-child {
   margin-right: 0;
 }
 .portfoio .portfolio-item {
@@ -867,59 +867,25 @@ section {
   opacity: 1;
   bottom: 0;
 }
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  animation: fadeEffect 1s;
 }
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
+.tabcontent.show {
+    display: block;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #0880e8;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0880e8;
-}
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(246, 176, 36, 0.08);
-}
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.portfolio-details .portfolio-description p {
-  padding: 0;
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 /*--------------------------------------------------------------
