@@ -220,18 +220,19 @@
         </div>
 
         <div class="row">
-          <div id="portfolio-flters" class="col-lg-12 d-flex justify-content-center tab">
-              <button class="tablinks" onclick="openV(event, 'SMC')" id="defaultOpen">Sheet<br>Metal Components</button>
-              <button class="tablinks" onclick="openV(event, 'SPM')">Special<br>Purpose Machine</button>
-              <button class="tablinks" onclick="openV(event, 'AL')">Assembly <br>Lines</button>
-              <button class="tablinks" onclick="openV(event, 'PM')">Precision<br>Machines</button>
-              <button class="tablinks" onclick="openV(event, 'JFT')">Jig, Fixtures &<br>Testing Machines</button>
-              <button class="tablinks" onclick="openV(event, 'FHM')">Fabrication &<br>Heavy Machineries</button>
-              <button class="tablinks" onclick="openV(event, 'DS')">Designing<br>Services</button>
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li id="clickhere" data-filter=".SMC" class="filter-active">Sheet Metal<br> Components</li>
+              <li data-filter=".SPM">Special Purpose <br>Machine</li>
+              <li data-filter=".AL">Assembly<br> Lines</li>
+              <li data-filter=".PM">Precision <br>Machines</li>
+              <li data-filter=".JFT">Jig, Fixtures &<br> Testing Machines</li>
+              <li data-filter=".FHM">Fabrication & Heavy <br>Machineries</li>
+              <li data-filter=".DS">Designing <br>Services</li>
+            </ul>
           </div>
         </div>
 
-        <div id="SMC" class="tabcontent">
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item SMC">
@@ -330,11 +331,6 @@
               
             </div>
           </div>
-
-        </div></div>
-
-        <div id="SPM" class="tabcontent">
-        <div class="row portfolio-container">
          
           <div class="col-lg-4 col-md-6 portfolio-item SPM">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650195671/spm/0_ezdgvc.png" class="img-fluid" alt="">
@@ -417,11 +413,6 @@
               
             </div>
           </div>
-
-        </div></div>
-
-        <div id="AL" class="tabcontent">
-        <div class="row portfolio-container">
          
           <div class="col-lg-4 col-md-6 portfolio-item AL">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650195669/spm/14_hfeawx.png" class="img-fluid" alt="">
@@ -477,11 +468,6 @@
               
             </div>
           </div>
-
-        </div></div>
-
-        <div id="JFT" class="tabcontent">
-        <div class="row portfolio-container">
          
           <div class="col-lg-4 col-md-6 portfolio-item JFT">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650195917/jig%20fixure/00_tdu4el.png" class="img-fluid" alt="">
@@ -537,11 +523,6 @@
               
             </div>
           </div>
-
-        </div></div>
-
-        <div id="PM" class="tabcontent">
-        <div class="row portfolio-container">
          
           <div class="col-lg-4 col-md-6 portfolio-item PM">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650195824/precision%20machining/0_bgyihh.png" class="img-fluid" alt="">
@@ -742,10 +723,6 @@
               
             </div>
           </div>
-        </div></div>
-
-        <div id="FHM" class="tabcontent">
-        <div class="row portfolio-container">
          
           <div class="col-lg-4 col-md-6 portfolio-item FHM">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650195872/Mfg/1_siaqct.jpg" class="img-fluid" alt="">
@@ -783,11 +760,6 @@
               
             </div>
           </div>
-
-        </div></div>
-
-        <div id="DS" class="tabcontent">
-        <div class="row portfolio-container">
          
           <div class="col-lg-4 col-md-6 portfolio-item DS">
             <img src="https://res.cloudinary.com/kjahdlfjsa/image/upload/v1650196000/design/0_bs6abq.png" class="img-fluid" alt="">
@@ -817,9 +789,9 @@
             </div>
           </div>
 
-        </div></div>
-
         </div>
+      </div>
+      
       </section>
 
     <!-- End Portfoio Section -->
