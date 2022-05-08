@@ -797,7 +797,7 @@ section {
   text-align: center;
   border-radius: 50px;
 }
-.portfoio #portfolio-flters button {
+.portfoio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 18px 10px 18px;
@@ -809,11 +809,11 @@ section {
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
 }
-.portfoio #portfolio-flters button:hover, .portfoio #portfolio-flters button.active {
+.portfoio #portfolio-flters li:hover, .portfoio #portfolio-flters li.filter-active {
   color: #fff;
   background: #0880e8;
 }
-.portfoio #portfolio-flters button:last-child {
+.portfoio #portfolio-flters li:last-child {
   margin-right: 0;
 }
 .portfoio .portfolio-item {
@@ -866,26 +866,6 @@ section {
 .portfoio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
-}
-/* Style the tab */
-.tab {
-  overflow: hidden;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border-top: none;
-  animation: fadeEffect 1s;
-}
-.tabcontent.show {
-    display: block;
-}
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
 }
 
 /*--------------------------------------------------------------
